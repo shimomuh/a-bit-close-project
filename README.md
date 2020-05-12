@@ -1,3 +1,7 @@
+# a bit close project
+
+<img src="doc/images/icon950x950.svg" width="300" height="300" />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
