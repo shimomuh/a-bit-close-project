@@ -1,6 +1,6 @@
 # a bit close project
 
-![](doc/images/logo320x320.svg)
+![](doc/images/logo320x256.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
