@@ -1,0 +1,23 @@
+$pink: #FF9BE3;
+$black: #222;
+
+body {
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  color: $black;
+}
+
+.app {
+  text-align: center;
+
+  &-header {
+    color: $pink;
+    font-weight: bold;
+    font-size: 4rem;
+  }
+}
+
+footer {
+  .author {
+    color: inherit;
+  }
+}
