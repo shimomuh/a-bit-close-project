@@ -1,4 +1,4 @@
-$black: #222;
+@import "./colorCode";
 
 body {
   margin: 0;
@@ -11,4 +11,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+// reset css
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ol, ul {
+  list-style: none;
 }
