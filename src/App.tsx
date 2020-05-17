@@ -13,7 +13,7 @@ function App() {
         </a>
       </header>
       <p>
-        <img src={logo} alt="ロゴ" />
+        <img className="appLogo" src={logo} alt="ロゴ" />
       </p>
       <p className="appDescription">
         仲良くなりたい人と"ちょっと"仲良くなることを目的としたプロジェクト
@@ -28,7 +28,7 @@ function App() {
               <h2>
                 アビクロ<span className="appMysteryLogo">謎</span>解き
               </h2>
-              <p>
+              <p className="appMysteryDescription">
                 謎解きで知恵を借りあって少し仲良くなろう！
               </p>
             </div>
