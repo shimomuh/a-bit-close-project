@@ -4,6 +4,9 @@ header {
   a {
     text-decoration: none;
   }
+  h1 {
+    display: inline-block;
+  }
 }
 
 header, footer {
@@ -13,7 +16,11 @@ header, footer {
 }
 
 footer {
-  margin: 4rem 0 2rem;
+  margin: 2rem 0;
+}
+
+section {
+  margin: 0 0 4rem;
 }
 
 .app {
@@ -24,6 +31,7 @@ footer {
     color: $pink;
     font-weight: bold;
     font-size: 4rem;
+    margin: 0;
   }
   @media screen and (max-width: 620px) {
     &Header {
@@ -44,15 +52,25 @@ footer {
       }
     }
   }
-
-  @media screen and (max-width: 620px) {
-    &Logo {
-      max-width: 280px;
+  &Logo {
+    &Small {
+      display: none;
+    }
+    &Large {
+      display: inline-block;
     }
   }
 
-  &Description {
-    margin-bottom: 6rem;
+  @media screen and (max-width: 620px) {
+    &Logo {
+      &Small {
+        display: inline-block;
+        max-width: 280px;
+      }
+      &Large {
+        display: none;
+      }
+    }
   }
 
   &Mystery {
@@ -60,6 +78,7 @@ footer {
     max-width: 600px;
     border: 2px solid $black;
     border-radius: 5px;
+    display: inline-block;
     &Logo {
       color: transparent;
       position: relative;
@@ -69,7 +88,7 @@ footer {
         width: 1.5rem;
         height: 1.5rem;
         background-position: 0 0;
-        margin-top: 0.4rem;
+        margin-top: 0.35rem;
         background-repeat: none;
         display: inline-block;
         position: absolute;

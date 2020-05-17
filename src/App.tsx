@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo320x256.svg';
+import smallLogo from './images/logo280x220.svg';
+import largeLogo from './images/logo320x256.svg';
 import './styles/App.scss';
 
 function App() {
@@ -12,29 +13,34 @@ function App() {
           </h1>
         </a>
       </header>
-      <p>
-        <img className="appLogo" src={logo} alt="ロゴ" />
-      </p>
-      <p className="appDescription">
-        仲良くなりたい人と"ちょっと"仲良くなることを目的としたプロジェクト
-      </p>
-      <h2>
-        プロジェクトサービス一覧
-      </h2>
-      <ul>
-        <li>
-          <a className="appLink" href="https://mystery.a-bit-close-project.com">
-            <div className="appMystery">
-              <h2>
-                アビクロ<span className="appMysteryLogo">謎</span>解き
-              </h2>
-              <p className="appMysteryDescription">
-                謎解きで知恵を借りあって少し仲良くなろう！
-              </p>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <section>
+        <p>
+          <img className="appLogoSmall" src={smallLogo} alt="ロゴ" />
+          <img className="appLogoLarge" src={largeLogo} alt="ロゴ" />
+        </p>
+        <p>
+          仲良くなりたい人と"ちょっと"仲良くなることを目的としたプロジェクト
+        </p>
+      </section>
+      <section>
+        <h2>
+          プロジェクトサービス一覧
+        </h2>
+        <ul>
+          <li>
+            <a className="appLink" href="https://mystery.a-bit-close-project.com">
+              <div className="appMystery">
+                <h2>
+                  アビクロ<span className="appMysteryLogo">謎</span>解き
+                </h2>
+                <p className="appMysteryDescription">
+                  謎解きで知恵を借りあって少し仲良くなろう！
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
       <footer>
         Copyright &copy; 2020 <a href="https://twitter.com/shimomuh">@shimomuh</a>. All Rights Reserved.
       </footer>
