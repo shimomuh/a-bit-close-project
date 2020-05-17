@@ -1,0 +1,94 @@
+@import "./colorCode.scss";
+
+header {
+  a {
+    text-decoration: none;
+  }
+}
+
+header, footer {
+  a {
+    color: inherit;
+  }
+}
+
+footer {
+  margin: 4rem 0 2rem;
+}
+
+.app {
+  margin: 1rem;
+  text-align: center;
+
+  &Header {
+    color: $pink;
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 620px) {
+    &Header {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    &Header {
+      font-size: 2rem;
+    }
+  }
+  &Link {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      div {
+        background-color: $pink;
+      }
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &Logo {
+      max-width: 280px;
+    }
+  }
+
+  &Description {
+    margin-bottom: 6rem;
+  }
+
+  &Mystery {
+    margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid $black;
+    border-radius: 5px;
+    &Logo {
+      color: transparent;
+      position: relative;
+      &::before {
+        background-image: url(../images/mystery-logo320x320.png);
+        background-size: 1.5rem 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: 0 0;
+        margin-top: 0.4rem;
+        background-repeat: none;
+        display: inline-block;
+        position: absolute;
+        content: '';
+      }
+    }
+    &Description {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  @media screen and (max-width: 620px) {
+    &Mystery {
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    &Mystery {
+      width: 90%;
+    }
+  }
+}
