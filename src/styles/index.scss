@@ -1,22 +1,73 @@
-@import "./colorCode";
+@import "./colorCode.scss";
 
-body {
-  margin: 0;
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-  color: $black;
+header {
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    display: inline-block;
+    color: $pink;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+  }
+  @media screen and (max-width: 620px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }
 
-// reset css
-ol, ul, li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+header, footer {
+  a {
+    color: inherit;
+  }
 }
 
-ol, ul {
-  list-style: none;
+footer {
+  margin: 2rem 0;
+}
+
+section {
+  margin: 0 0 4rem;
+}
+
+.index {
+  margin: 1rem;
+  text-align: center;
+  &Logo {
+    &Small {
+      display: none;
+    }
+    &Large {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &Logo {
+      &Small {
+        display: inline-block;
+        max-width: 280px;
+      }
+      &Large {
+        display: none;
+      }
+    }
+  }
+
+  &Link {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      div {
+        background-color: $hover-pink;
+      }
+    }
+  }
 }

@@ -1,0 +1,63 @@
+@import './colorCode.scss';
+
+.mystery {
+  margin: 0 auto;
+  max-width: 600px;
+  border: 2px solid $black;
+  border-radius: 5px;
+  display: inline-block;
+  h2 {
+    position: relative;
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+    }
+    &::before {
+      background-image: url(../images/mystery/question-mark-head.png);
+      background-size: 24px 32px;
+      height: 32px;
+      width: 24px;
+      top: 0rem;
+      margin-left: -1.6rem;
+    }
+    &::after {
+      background-image: url(../images/mystery/question-mark-tail.png);
+      background-size: 36px 48px;
+      height: 48px;
+      width: 36px;
+      top: -0.5rem;
+      margin-right: 0;
+    }
+  }
+  &Logo {
+    color: transparent;
+    position: relative;
+    &::before {
+      background-image: url(../images/mystery/logo320x320.png);
+      background-size: 1.5rem 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-position: 0 0;
+      margin-top: 0.35rem;
+      background-repeat: none;
+      display: inline-block;
+      position: absolute;
+      content: '';
+    }
+  }
+  &Description {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .mystery {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .mystery {
+    width: 90%;
+  }
+}
